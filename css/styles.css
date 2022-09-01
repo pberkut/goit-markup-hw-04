@@ -72,7 +72,7 @@ body {
   border-bottom: 1px solid var(--header-line-cl);
 }
 
-.page-header > .container {
+.page-header>.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +106,7 @@ body {
   margin-right: auto;
 }
 
-.main-nav > .list {
+.main-nav>.list {
   display: flex;
 }
 
@@ -133,7 +133,7 @@ body {
   display: flex;
 }
 
-.header-contact > .list-item:first-child {
+.header-contact>.list-item:first-child {
   margin-right: 50px;
 }
 
@@ -323,7 +323,7 @@ body {
   margin-bottom: 50px;
 }
 
-.filter-list > .list-item:not(:last-child) {
+.filter-list>.list-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -424,7 +424,7 @@ body {
   color: var(--white-txt-cl);
 }
 
-.address > .text {
+.address>.text {
   margin-bottom: 9px;
 }
 
