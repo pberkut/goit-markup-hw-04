@@ -21,6 +21,10 @@
 
   /* Others */
   --header-line-cl: #ececec;
+
+  /* Cards flex sets flex-basis*/
+  --items: 1;
+  --indent: 30px;
 }
 
 /* Preset styles*/
@@ -50,7 +54,7 @@ img {
   margin: 0;
 }
 
-/* Default styles */
+/* Base styles */
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
@@ -61,6 +65,17 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+/* Card set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /**
@@ -201,23 +216,18 @@ body {
 
 /**
   |============================
-  | Benefits section
+  | Features section
   |============================
 */
-.benefits {
+.features {
   padding: 94px 0;
 }
 
-.benefits .list {
-  display: flex;
-  gap: 30px;
+.features-list {
+  --items: 4;
 }
 
-.benefits-item {
-  width: 270px;
-}
-
-.benefits-title {
+.features-title {
   font-weight: var(--font-weight-bold);
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -226,7 +236,7 @@ body {
   margin-bottom: 10px;
 }
 
-.benefits-desc {
+.features-desc {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -242,9 +252,10 @@ body {
   padding-bottom: 94px;
 }
 
-.about .list {
-  display: flex;
-  gap: 30px;
+.about-list {
+  /* display: flex;
+  gap: var(--indent); */
+  --items: 3;
 }
 
 .about-title {
@@ -276,8 +287,9 @@ body {
 }
 
 .team-list {
-  display: flex;
-  gap: 30px;
+  /* display: flex;
+  gap: var(--indent); */
+  --items: 4;
 }
 
 .team-group {
@@ -318,13 +330,13 @@ body {
 
 /* Filter button */
 .filter-list {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin-bottom: 50px;
 }
 
 .filter-list>.list-item:not(:last-child) {
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .filter-btn {
@@ -357,20 +369,11 @@ body {
 
 /* Gallery portfolio group */
 /* Grid portfolio */
-:root {
-  --items: 3;
-  --indent: 30px;
-}
 
 .gallery-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  --items: 3;
 }
 
-.portfolio-card {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
 
 .gallery-group {
   border: 1px solid #eeeeee;
