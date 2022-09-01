@@ -22,7 +22,7 @@
   /* Others */
   --header-line-cl: #ececec;
 
-  /* Cards flex sets flex-basis*/
+  /* Grid set - flex-basis*/
   --items: 1;
   --indent: 30px;
 }
@@ -67,14 +67,14 @@ body {
   margin: 0 auto;
 }
 
-/* Card set */
-.card-set {
+/* Grid set */
+.grid-set {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
 }
 
-.card-set-item {
+.grid-set-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
@@ -330,13 +330,10 @@ body {
 
 /* Filter button */
 .filter-list {
-  /* display: flex;
-  justify-content: center; */
+  --items: 5;
+  --indent: 8px;
+  justify-content: center;
   margin-bottom: 50px;
-}
-
-.filter-list>.list-item:not(:last-child) {
-  /* margin-right: 8px; */
 }
 
 .filter-btn {
