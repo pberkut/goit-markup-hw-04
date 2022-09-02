@@ -216,18 +216,18 @@ body {
 
 /**
   |============================
-  | Features section
+  | Benefits section
   |============================
 */
-.features {
+.benefits {
   padding: 94px 0;
 }
 
-.features-list {
+.benefits-list {
   --items: 4;
 }
 
-.features-title {
+.benefits-title {
   font-weight: var(--font-weight-bold);
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -236,7 +236,7 @@ body {
   margin-bottom: 10px;
 }
 
-.features-desc {
+.benefits-desc {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
