@@ -21,6 +21,7 @@
 
   /* Others */
   --header-line-cl: #ececec;
+  --btn-active-cl: #188CE8;
 
   /* Grid set - flex-basis*/
   --items: 1;
@@ -183,9 +184,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(../images/hero-bcg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -216,6 +218,10 @@ body {
   border-color: var(--accent-txt-cl);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.hero-btn:active {
+  background-color: var(--btn-active-cl);
 }
 
 /**
