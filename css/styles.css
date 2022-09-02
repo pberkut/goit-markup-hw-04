@@ -329,6 +329,36 @@ body {
   color: var(--grey-txt-cl);
 }
 
+.socials-list {
+  display: flex;
+}
+
+.social-items {
+  display: inline-block;
+}
+
+/**
+  |============================
+  | Clients section
+  |============================
+*/
+
+.clients {
+  padding: 94px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+
 /**
   |============================
   | Portfolio section
