@@ -19,6 +19,9 @@
   --grey-bg-cl: #f5f4fa;
   --white-bg-cl: #fff;
 
+  /* Icons color */
+  --team-primary-cl: #AFB1B8;
+
   /* Others */
   --header-line-cl: #ececec;
   --btn-active-cl: #188CE8;
@@ -154,6 +157,9 @@ body {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -161,6 +167,10 @@ body {
   color: var(--grey-txt-cl);
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contact-icon {
+  fill: currentColor;
 }
 
 .current {
@@ -305,6 +315,8 @@ body {
 .team-group {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .team-card {
@@ -323,6 +335,7 @@ body {
 }
 
 .team-position {
+  margin-bottom: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -330,11 +343,33 @@ body {
 }
 
 .socials-list {
-  display: flex;
+  --items: 4;
+  --indent: 10px;
 }
 
-.social-items {
-  display: inline-block;
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  /* outline: 1px solid tomato; */
+}
+
+.socials-icon {
+  fill: var(--team-primary-cl);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-txt-cl);
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--white-txt-cl);
 }
 
 /**
