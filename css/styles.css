@@ -183,6 +183,9 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: url(../images/hero-bcg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -210,6 +213,7 @@ body {
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-txt-cl);
   border-radius: 4px;
   cursor: pointer;
 }
