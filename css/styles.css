@@ -514,6 +514,12 @@ body {
   padding: 60px 0;
 }
 
+.page-footer>.container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
 .page-footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -555,6 +561,40 @@ body {
 .footer-link:focus {
   color: var(--accent-txt-cl);
 }
+
+.join {}
+
+.join-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.join .socials-list {
+  --items: 4;
+  --indent: 10px;
+}
+
+.join .socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-txt-cl);
+}
+
+.join .socials-icon {
+  fill: currentColor;
+}
+
+.join .socials-link:hover,
+.join .socials-link:focus {
+  background-color: var(--accent-txt-cl);
+}
+
+
+
 
 /**
   |============================
