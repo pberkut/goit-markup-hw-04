@@ -20,7 +20,7 @@
   --white-bg-cl: #fff;
 
   /* Icons color */
-  --team-primary-cl: #AFB1B8;
+  --icon-primary-cl: #AFB1B8;
 
   /* Others */
   --header-line-cl: #ececec;
@@ -247,6 +247,13 @@ body {
   --items: 4;
 }
 
+.benefits-wrap {
+  display: flex;
+  padding: 25px 100px;
+  background-color: var(--grey-bg-cl);
+  margin-bottom: 30px;
+}
+
 .benefits-title {
   font-weight: var(--font-weight-bold);
   font-size: 14px;
@@ -359,7 +366,7 @@ body {
 }
 
 .socials-icon {
-  fill: var(--team-primary-cl);
+  fill: var(--icon-primary-cl);
 }
 
 .socials-link:hover,
@@ -385,6 +392,7 @@ body {
 }
 
 .clients-title {
+  padding-bottom: 50px;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -392,6 +400,36 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
+
+.clients-list {
+  display: flex;
+  --items: 6;
+}
+
+.clients-item {
+  /* display: block; */
+
+  /* outline: 1px solid tomato; */
+}
+
+.clients-link {
+  display: inline-block;
+  padding: 16px 32px;
+  border: 1px solid var(--icon-primary-cl);
+  color: var(--icon-primary-cl);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-txt-cl);
+  border-color: var(--accent-txt-cl);
+}
+
+.clients-icon {
+  /* display: block; */
+  fill: currentColor;
+}
+
 
 
 /**
